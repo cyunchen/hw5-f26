@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
 	var muteButton = document.querySelector("#mute");
 
 	function updateVolume() {
-		volume.textContent = Math.round(video.volume * 100) + "%";
+		volume.textContent = Math.round(video.volume * 100);
 	}
 
 	document.querySelector("#play").addEventListener("click", function () {
@@ -59,5 +59,4 @@ window.addEventListener("load", function () {
 		video.classList.remove("oldSchool");
 	});
 
-	updateVolume();
 });
